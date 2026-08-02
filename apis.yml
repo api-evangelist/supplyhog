@@ -1,7 +1,28 @@
 aid: supplyhog
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/supplyhog.png
 name: SupplyHog
-description: SupplyHog is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SupplyHog is an ecommerce platform built specifically for hardware and building-materials
+  retailers, giving independent hardware and building-supply stores a branded online storefront
+  to sell their products. The platform provides co-op and custom product catalogs, flexible
+  fulfillment (in-store pickup, ship-to-store, local delivery, and ship-to-home with Shippo
+  shipping labels), Stripe-powered payments, TaxJar tax calculation, real-time ERP inventory and
+  pricing synchronization, custom branding and domains, location-aware search, and admin tools for
+  order fulfillment and abandoned-cart recovery. Founded in 2010 as the Nopone.com reverse-auction
+  marketplace, SupplyHog went through the DreamIt and 500 Startups accelerators, pivoted to full
+  ecommerce services, and was acquired by construction-supply retailer R.P. Lumber in 2016. It does
+  not publish a public developer API surface; it acts as a consumer of Stripe, TaxJar, and Shippo.
 url: https://raw.githubusercontent.com/api-evangelist/supplyhog/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Ecommerce
+- Building Materials
+- Hardware
+- Construction
+- Retail
+- Supply Chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/supplyhog-domain-security.yml
 - type: Website
   url: https://supplyhog.com
+- type: Pricing
+  url: https://supplyhog.com/site/index#pricing
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
